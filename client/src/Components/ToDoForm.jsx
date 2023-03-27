@@ -1,8 +1,7 @@
 import { useState } from "react"
 
 
-
-
+// Redux is a databse for frontend 
 
 const ToDoForm = () => {
 
