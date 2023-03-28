@@ -1,7 +1,14 @@
+import* as actionTypes from '../actions/type'
 
 
+const todosReducer = (state = [] , action) => {
 
-const todosReducer = () => {
+    switch(action.type){
+        case actionTypes.ADDNEW_TODO:
+            return[action.payload,...state]
+        default:
+            return state;
+    }
 
 }
 

@@ -1,9 +1,12 @@
 import { useState } from "react"
-
+import { addNewTodo } from "../Redux/actions"
+import { useDispatch } from "react-redux"
 
 // Redux is a databse for frontend 
 
 const ToDoForm = () => {
+
+    const dispatch = useDispatch();
 
     // we are using state to store the value of input field  
 
@@ -11,8 +14,9 @@ const ToDoForm = () => {
 
     // we use onformsubmit to handle page refresh 
 
-    const onFormSubmit = () =>{
-        
+    const onFormSubmit = (e) =>{
+        e.preventDefault();
+        dispatch(addNewTodo(text))
     }
 
     // we used onInputChange to find out the value written inn input field 
