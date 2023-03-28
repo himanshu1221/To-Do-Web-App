@@ -1,6 +1,7 @@
 import { createStore,combineReducers,applyMiddleware } from "redux"
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
+import todosReducer from "./reducers/todosReducer";
 
 const reducer = combineReducers({
     todos: todosReducer
@@ -10,7 +11,7 @@ const middleware = [thunk];
 
 const store = createStore(
 
-    //we can perform action items with the help of reducers we use combine reducer to combine multiple task
+    //we can perform action items with the help of reducers we use combine reducer to combine multiple task CRUDtak
     //with the help of redux devtools extension we can connect with dev tools extension in the browser to store the data 
     //we are using thunk as a middle ware 
 
