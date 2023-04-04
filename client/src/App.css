@@ -25,7 +25,7 @@ input{
 
 .task{
   background-color: #34495e;
-  padding: 15px;
+  padding: 20px;
   margin: 5px;
   list-style: none;
   border-radius: 5px;
@@ -44,4 +44,12 @@ input{
 
 article{
   display: grid;
+}
+
+.edit-todo{
+  font-size: 16px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
 }
