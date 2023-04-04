@@ -1,2 +1,3 @@
-export const ADDNEW_TODO = "ADDNEEW_TODO"
+export const ADDNEW_TODO = "ADDNEW_TODO"
 export const GETALL_TODO = "GETALL_TODO"
+export const TOGGLE_TODO = "TOGGLE_TODO"
