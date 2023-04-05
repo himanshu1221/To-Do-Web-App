@@ -64,8 +64,24 @@ The Todo app uses the following dependencies:
 - `font-awesome`: for fonts that are used in the web-app
 - `express`: for creating routes
 - `dotenv`: to use the .env file in react
-- `mongoose`: to connect the database  
+- `mongoose`: to create schemas and connect it to Database 
 
 ## License
 
-The Todo app is licensed under the MIT License. See the `LICENSE` file for more information.
+The Todo app is licensed under the MIT License. See the [LICENSE](https://github.com/himanshu1221/To-Do-Web-App/blob/master/LICENSE.md) file for more information.
+
+## Resources
+- [Axios](https://axios-http.com/docs/intro)
+- [React](https://create-react-app.dev/)
+- [React Dom](https://legacy.reactjs.org/docs/react-dom.html)
+- [React Redux](https://react-redux.js.org/introduction/getting-started)
+- [React router dom](https://reactrouter.com/en/main/start/overview)
+- [Redux](https://redux.js.org/introduction/getting-started)
+- [Redux Thunk](https://redux.js.org/usage/writing-logic-thunks)
+- [Redux devtools extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+- [font-awesome](https://fontawesome.com/docs)
+- [express](https://expressjs.com/en/guide/routing.html)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [mongoose](https://mongoosejs.com/docs/guide.html)
+- [Todo web app part 1](https://youtu.be/0UJ8TPg1yiE)
+- [Todo web app part 2](https://youtu.be/CG_nh3vJ1Yo)
