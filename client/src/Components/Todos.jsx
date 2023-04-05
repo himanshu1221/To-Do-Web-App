@@ -3,7 +3,7 @@ import { getAllTodos } from "../Redux/actions/index"
 import { useDispatch,useSelector } from "react-redux"
 import Todo from "./Todo";
 import Tabs from "./Tabs";
-
+import { ALL_TODO,DONE_TODO,ACTIVE_TODO } from "../Redux/actions/type";
 export const Todos = () => {
 
     const dispatch = useDispatch();
@@ -16,6 +16,16 @@ export const Todos = () => {
         dispatch(getAllTodos())
     },[])
 
+    const getTodos = () => {
+        if(currentTab === ALL_TODO ){
+            return todos
+        }else if (currentTab === ACTIVE_TODO){
+            return todos.filter(todos => !todos.done)
+        }else if(currentTab === DONE_TODO){
+            return todos.filter(todos => todos.done)
+        }
+    }
+
     return(
         <article>
             <div>
@@ -23,7 +33,7 @@ export const Todos = () => {
             </div>
             <ul>
                 {
-                    todos.map(todo => (
+                    getTodos().map(todo => (
                         <Todo
                             key = {todo._id}
                             todo = {todo}
