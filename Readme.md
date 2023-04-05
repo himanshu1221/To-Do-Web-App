@@ -6,32 +6,32 @@ This is a Todo application built with the MERN stack (MongoDB, Express, React, a
 
 To install the Todo app, follow these steps:
 
-1. Clone the repository: 
+#### 1. Clone the repository: 
 
 `git clone https://github.com/{your-username}/To-Do-Web-App.git`
 
 
-2. Navigate to the root directory of the project and install the dependencies:
+#### 2. Navigate to the root directory of the project and install the dependencies:
 
 - `cd Client` for Front-end
 - `cd server` for Back-end
 - `npm install` to install all the dependecies
 
-3. Create a `.env` file and copy the configuration from `.env.sample` to `.env` and replace the configs by your configs
+#### 3. Create a `.env` file and copy the configuration from `.env.sample` to `.env` and replace the configs by your configs
 
-4. Start the application:
+#### 4. Start the application:
 
-#### Step 1 :
+Step 1 :
 - `npm start` in the server folder
 start the server and make sure you get logs in console that are 
 - `Server Initialised on port 8000`
 - `database connected succefully`
 
-#### Step 2 :
+Step 2 :
 - `npm start` in the client folder
 - Your development build will start
 
-5. Open your web browser and go to `http://localhost:3000` to view the application.
+#### 5. Open your web browser and go to `http://localhost:3000` to view the application.
 
 
 ## Usage
