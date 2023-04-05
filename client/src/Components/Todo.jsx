@@ -22,9 +22,9 @@ const Todo = ({ todo }) => {
                 color: todo.done ? '#bdc3c7' : '#34495e'
             }}
             >
-                <span style={{display: editing ? "inline" : "none"}}>{todo.data}</span>
+                <span style={{ display : editing ? "none" : ""}}>{todo.data}</span>
                 <form
-                style={{display: editing ? "none" : ""}}
+                style={{display: editing ? "inline" : "none"}}
                 onSubmit={onFormSubmit}
                 >
                     <input type="text" 
