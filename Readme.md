@@ -1,4 +1,4 @@
-# Todo App Readme
+# To-Do-Web-App 
 
 This is a Todo application built with the MERN stack (MongoDB, Express, React, and Node.js) and Redux. The application allows users to create, edit, and delete todos. Users can also mark todos as completed or not completed. 
 
