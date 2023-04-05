@@ -71,3 +71,10 @@ article{
   color: #fff;
   background-color: #6c6777;
 }
+
+.button.clear{
+  float: right;
+  color: white;
+  background-color: red;
+  width: 170px;
+}
