@@ -1,13 +1,17 @@
 import { useState } from "react";
-import { toggleTodo } from "../Redux/actions"
+import { toggleTodo,updateTodo } from "../Redux/actions"
 import { useDispatch } from "react-redux"
 
 const Todo = ({ todo }) => {
 
     const[editing,setEditing] = useState(false);
     const [text,setText] = useState(todo.data)
-
     const dispatch = useDispatch();
+    const onFormSubmit = (e) => {
+        e.preventDefault()
+        setEditing(prevstate => !prevstate)
+        dispatch(updateTodo(todo._id,text))
+    }
 
     return(
         <div>
@@ -21,6 +25,7 @@ const Todo = ({ todo }) => {
                 <span style={{display: editing ? "inline" : "none"}}>{todo.data}</span>
                 <form
                 style={{display: editing?"none":""}}
+                onSubmit={onFormSubmit}
                 >
                     <input type="text" 
                     value={text}
@@ -28,7 +33,7 @@ const Todo = ({ todo }) => {
                     onChange={(e)=> setText(e.target.value)}
                     />
                 </form>
-                <span className="icon">
+                <span className="icon" onClick={()=>dispatch(deleteTodo(todo._id))}>
                     <i className="fas fa-trash"/>
                 </span>
                 <span className="icon" onClick={()=>setEditing(prevstate => !prevstate)}>
