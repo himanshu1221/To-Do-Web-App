@@ -21,8 +21,15 @@ To install the Todo app, follow these steps:
 
 4. Start the application:
 
-- `npm start` in the client folder
+#### Step 1 :
 - `npm start` in the server folder
+start the server and make sure you get logs in console that are 
+- `Server Initialised on port 8000`
+- `database connected succefully`
+
+#### Step 2 :
+- `npm start` in the client folder
+- Your development build will start
 
 5. Open your web browser and go to `http://localhost:3000` to view the application.
 
