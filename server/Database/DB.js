@@ -5,12 +5,11 @@ dotenv.config();
 
 // create a .env file with the help of .env.sample 
 
-const USERNAME = process.env.DB_USERNAME
-const PASSWORD = process.env.DB_PASSWORD
+const DB_URL = process.env.DB_URL
 
 const connection = () => {
 
-    const MONGODB_URI = `mongodb+srv://${USERNAME}:${PASSWORD}@mernstackcluster.syg0ylj.mongodb.net/?retryWrites=true&w=majority`;
+    const MONGODB_URI = `${DB_URL}`;
 
     // this is used to connect mongodb // old parser will be depriciated we will soon use new parser
 
