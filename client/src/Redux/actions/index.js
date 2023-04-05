@@ -1,5 +1,5 @@
 import axios from "axios"
-import { ADDNEW_TODO, GETALL_TODO,TOGGLE_TODO,UPDATE_TODO } from "./type";
+import { ADDNEW_TODO, GETALL_TODO,TOGGLE_TODO,UPDATE_TODO,DELETE_TODO } from "./type";
 const API_URL = "http://localhost:8000";
 
 export const addNewTodo = (data) => async(dispatch) =>{
@@ -66,6 +66,22 @@ export const updateTodo = (id,data) => async (dispatch)=>{
       }
     )
   }catch(error){
-      console.log("error while calling getalltodo api",error)
+      console.log("error while calling Updatealltodo api",error)
+  }
+}
+
+export const deleteTodo = (id) => async (dispatch)=>{
+  try{
+
+    const res = await axios.delete(`${API_URL}/todos/${id}`)
+    
+    dispatch(
+      { 
+        type : DELETE_TODO,
+        payload : res.data 
+      }
+    )
+  }catch(error){
+      console.log("error while calling deletealltodo api",error)
   }
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { toggleTodo,updateTodo } from "../Redux/actions"
+import { toggleTodo,updateTodo,deleteTodo } from "../Redux/actions"
 import { useDispatch } from "react-redux"
 
 const Todo = ({ todo }) => {
