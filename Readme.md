@@ -1,5 +1,7 @@
 # To-Do-Web-App 
 
+<img src="https://github.com/himanshu1221/To-Do-Web-App/blob/master/Template.png" alt="Template" width="1280" height="500">
+
 This is a Todo application built with the MERN stack (MongoDB, Express, React, and Node.js) and Redux. The application allows users to create, edit, and delete todos. Users can also mark todos as completed or not completed. 
 
 ## Installation
