@@ -53,3 +53,21 @@ article{
   border: none;
   border-bottom: 1px solid #fff;
 }
+
+.button{
+  margin: 0px 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #6c6777;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.button.selected{
+  color: #fff;
+  background-color: #6c6777;
+}

@@ -1,5 +1,5 @@
 import axios from "axios"
-import { ADDNEW_TODO, GETALL_TODO,TOGGLE_TODO,UPDATE_TODO,DELETE_TODO } from "./type";
+import { ADDNEW_TODO, GETALL_TODO,TOGGLE_TODO,UPDATE_TODO,DELETE_TODO,TOGGLE_TAB } from "./type";
 const API_URL = "http://localhost:8000";
 
 export const addNewTodo = (data) => async(dispatch) =>{
@@ -84,4 +84,13 @@ export const deleteTodo = (id) => async (dispatch)=>{
   }catch(error){
       console.log("error while calling deletealltodo api",error)
   }
+}
+
+export const toggleTab = (tab) => async (dispatch) => {
+  dispatch(
+    {
+      type:TOGGLE_TAB,
+      selected:tab
+    }
+  )
 }

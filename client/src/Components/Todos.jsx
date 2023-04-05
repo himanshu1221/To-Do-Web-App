@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { getAllTodos } from "../Redux/actions/index"
 import { useDispatch,useSelector } from "react-redux"
 import Todo from "./Todo";
+import Tabs from "./Tabs";
 
 export const Todos = () => {
 
@@ -9,6 +10,7 @@ export const Todos = () => {
 
 
     const todos = useSelector(state => state.todos) 
+    const currentTab = useSelector(state => state.currentTab)
 
     useEffect(()=>{
         dispatch(getAllTodos())
@@ -16,6 +18,9 @@ export const Todos = () => {
 
     return(
         <article>
+            <div>
+                <Tabs currentTab={currentTab}/>
+            </div>
             <ul>
                 {
                     todos.map(todo => (

@@ -24,7 +24,7 @@ const Todo = ({ todo }) => {
             >
                 <span style={{display: editing ? "inline" : "none"}}>{todo.data}</span>
                 <form
-                style={{display: editing?"none":""}}
+                style={{display: editing ? "none" : ""}}
                 onSubmit={onFormSubmit}
                 >
                     <input type="text" 
